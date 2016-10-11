@@ -4,7 +4,16 @@
     <script type="text/javascript" src="js/marked.js"></script>
     <link rel="stylesheet" type="text/css" href="github_markdown.css" />
   </head>
-  <body>
+  <style>
+    .markdown-body {
+        box-sizing: border-box;
+        min-width: 200px;
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 45px;
+    }
+  </style>
+  <body class="markedown-body">
     <script type="text/javascript">
       jQuery.get('https://jdaniellhebert.github.io/index.md', function(data) {
         html=marked(data);
