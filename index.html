@@ -8,6 +8,7 @@
       jQuery.get('http://jdaniellhebert.github.io/ReadMe.md', function(text) {
           var converter = new showdown.Converter();
           html=converter.makeHtml('*test* abc');
+          target.innerHTML = html;
       });
     </script>
   </body>
