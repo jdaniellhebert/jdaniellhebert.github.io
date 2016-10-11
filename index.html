@@ -5,10 +5,10 @@
   </head>
   <body>
     <script type="text/javascript">
-      jQuery.get('https://jdaniellhebert.github.io/README.md', function(data) {});
-      console.log(data);
+      var text = jQuery.get('https://jdaniellhebert.github.io/README.md', function(data) {});
+      console.log(text);
       var converter = new showdown.Converter();
-      html=converter.makeHtml(data);
+      html=converter.makeHtml(text);
       console.log(html);
       target.innerHTML = html;
     </script>
