@@ -6,6 +6,7 @@
   <body>
     <script type="text/javascript">
       var html_result = '<h1 id="jdaniellhebertgithubio">jdaniellhebert.github.io</h1>';
+      console.log("html_result: ", html_result);
       var converter = new showdown.Converter();
       jQuery.get('https://jdaniellhebert.github.io/README.md', function(data) {
         console.log(data);
