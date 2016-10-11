@@ -6,14 +6,12 @@
   <body>
     <script type="text/javascript">
       var converter = new showdown.Converter();
-      var html_result = jQuery.get('https://jdaniellhebert.github.io/README.md', function(data) {
+      jQuery.get('https://jdaniellhebert.github.io/README.md', function(data) {
         console.log(data);
         html=converter.makeHtml(data);
         console.log(html);
-        return html;
-      });
-      console.log(html_result);
-      document.getElementById("body").innerText = html_result;
+        document.getElementById("body").innerText = html;
+      });  
     </script>
   </body>
 </html>
