@@ -5,7 +5,7 @@
   </head>
   <body>
     <script type="text/javascript">
-      var data = jQuery.get('https://jdaniellhebert.github.io/README.md', function(data) {});
+      jQuery.get('https://jdaniellhebert.github.io/README.md', function(data) {});
       console.log(data);
       var converter = new showdown.Converter();
       html=converter.makeHtml(data);
