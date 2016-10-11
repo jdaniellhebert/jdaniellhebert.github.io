@@ -5,13 +5,14 @@
   </head>
   <body>
     <script type="text/javascript">
+      var html_result = '<h1 id="jdaniellhebertgithubio">jdaniellhebert.github.io</h1>';
       var converter = new showdown.Converter();
       jQuery.get('https://jdaniellhebert.github.io/README.md', function(data) {
         console.log(data);
         html=converter.makeHtml(data);
         console.log(html);
-        document.getElementById("myTextArea").innerText = html;
       });  
+      document.getElementById("myTextArea").innerText = html_result;
     </script>
     <myTextArea>
     </myTextArea>
