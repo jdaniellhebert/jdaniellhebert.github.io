@@ -7,9 +7,7 @@
     <script type="text/javascript">
       var converter = new showdown.Converter();
       jQuery.get('https://jdaniellhebert.github.io/README.md', function(data) {
-        console.log(data);
         html=converter.makeHtml(data);
-        console.log(html);
         $('body').prepend(html);
       });  
     </script>
