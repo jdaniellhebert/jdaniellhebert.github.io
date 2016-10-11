@@ -1,11 +1,14 @@
 <html>
   <head>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/showdown.js"></script>
   </head>
   <body>
     <script type="text/javascript">
-      var converter = new showdown.Converter();
-      alert(converter.makeHtml('*test* abc'));
+      jQuery.get('http://localhost/foo.txt', function(text) {
+          var converter = new showdown.Converter();
+          html=converter.makeHtml('*test* abc');
+      });
     </script>
   </body>
 </html>
