@@ -1,11 +1,11 @@
 <html>
   <head>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/showdown.js"></script>
   </head>
   <body>
     <script type="text/javascript">
-      jQuery.get('http://localhost/foo.txt', function(text) {
+      jQuery.get('http://jdaniellhebert.github.io/ReadMe.md', function(text) {
           var converter = new showdown.Converter();
           html=converter.makeHtml('*test* abc');
       });
