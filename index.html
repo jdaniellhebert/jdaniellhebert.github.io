@@ -11,8 +11,8 @@
         html=converter.makeHtml(data);
         console.log(html);
       });  
-      console.log("html_result: ", html_result);
-      document.getElementById("myTextArea").innerText = html_result;
+      console.log("html_result: ", html_result.responseText);
+      document.getElementById("myTextArea").innerText = html_result.responseText;
     </script>
     <myTextArea>
     </myTextArea>
