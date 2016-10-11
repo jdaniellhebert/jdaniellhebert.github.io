@@ -13,14 +13,14 @@
         padding: 45px;
     }
   </style>
-  <body class="markedown-body">
+  <body>
     <script type="text/javascript">
       jQuery.get('https://jdaniellhebert.github.io/index.md', function(data) {
         html=marked(data);
-        $('body').prepend(html);
+        $('article').prepend(html);
       });  
     </script>
-    <myTextArea>
-    </myTextArea>
+    <article class=markdown-body>
+    </article>
   </body>
 </html>
