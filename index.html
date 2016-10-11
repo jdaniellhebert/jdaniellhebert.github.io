@@ -5,11 +5,13 @@
   </head>
   <body>
     <script type="text/javascript">
-      jQuery.get('http://jdaniellhebert.github.io/ReadMe.md', function(text) {
-          var converter = new showdown.Converter();
-          html=converter.makeHtml('*test* abc');
-          target.innerHTML = html;
+      jQuery.get('http://jdaniellhebert.github.io/ReadMe.md', function(data) {
       });
+      console.log(data);
+      var converter = new showdown.Converter();
+      html=converter.makeHtml(data);
+      console.log(html);
+      target.innerHTML = html;
     </script>
   </body>
 </html>
