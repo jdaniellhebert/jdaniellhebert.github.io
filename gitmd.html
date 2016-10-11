@@ -6,7 +6,6 @@
   </head>
   <body>
     <script type="text/javascript">
-      var converter = new showdown.Converter();
       jQuery.get('https://jdaniellhebert.github.io/index.md', function(data) {
         html=marked(data);;
         $('body').prepend(html);
